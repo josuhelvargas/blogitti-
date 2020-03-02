@@ -1,5 +1,21 @@
 <script>
 
+let usernameValue = "";
+let passwordValue = "";
+
+function onChangeUserName(value) {
+	console.log(value);
+
+}
+
+
+function onChangePassword(value){
+	console.log(value);
+
+}
+
+
+
 </script>
 
 
@@ -16,19 +32,19 @@
 				</div>
 			</div>
 			<div class="card-body">
-				<form>
+				<form on:submit|preventDefault= {handleSubmit} >
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-						<input type="text" class="form-control" placeholder="username">
+						<input type="text" class="form-control" placeholder="username" bind:value={usernameValue} on:change = {  onChangeUserName(usernameValue)}>
 						
 					</div>
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-key"></i></span>
 						</div>
-						<input type="password" class="form-control" placeholder="password">
+						<input type="password" class="form-control" placeholder="password" bind:value={passwordValue} on:change = {onChangePassword(passwordValue)}>
 					</div>
 					<div class="row align-items-center remember">
 						<input type="checkbox">Remember Me

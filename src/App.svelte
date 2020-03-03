@@ -3,6 +3,7 @@
 	import Home from './Home.svelte';
 	import Login from './Login.svelte';
 	import NavigationTop from './NavigationTop.svelte';
+	import ITraining from './ITraining.svelte';
 </script>
 
 
@@ -10,7 +11,8 @@
 <main>
 <NavigationTop></NavigationTop>
 <br/>
-<Login></Login>
+<!-- <Login></Login> -->
+<ITraining></ITraining>
 </main>
 
 <style>

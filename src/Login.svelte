@@ -14,6 +14,9 @@ function onChangePassword(value){
 
 }
 
+function handleSubmit(usernameValue,passwordValue){
+	console.log(usernameValue,passwordValue);
+}
 
 
 </script>
